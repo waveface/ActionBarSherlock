@@ -1,7 +1,19 @@
 apply plugin: 'android-library'
 
+buildscript {
+    repositories.mavenCentral()
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.5.+'
+    }
+}
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+
 dependencies {
-  compile 'com.google.android:support-v4:r7'
+  compile('com.google.android:support-v4:r13')
 }
 
 android {
